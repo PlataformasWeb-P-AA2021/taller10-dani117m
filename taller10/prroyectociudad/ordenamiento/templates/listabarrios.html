@@ -1,0 +1,16 @@
+<h2>Listado de Barrios</h3>
+<h3>Número de Barrios {{ numero_barrios }}</h3>
+
+{% for e in estudiantes %}
+    
+  {{e}}<br/>
+  <ul>
+  {% for i in barrios%}
+      <li>
+          Lista barrios: {{i.nombre}} - Viviendas {{i.número_viviendas}} - Parques {{i.número_parques}} - Edificios {{i.número_edificios}} }
+          <br/>
+      </li>
+  {% endfor %}
+  </ul>
+  <br/>
+{% endfor %}

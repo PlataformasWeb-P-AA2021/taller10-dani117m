@@ -1,0 +1,8 @@
+<h2>Crear Barrio{{parroquia}}</h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{formulario.as_p}}
+    <p> <input type='submit' value="agregar" /></p>
+</form>
+[<a href="{% url 'index'%}">Inicio</a>]
